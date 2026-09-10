@@ -1,0 +1,28 @@
+id: react-bits
+
+name: React Bits
+
+upstream_url: https://github.com/DavidHDev/react-bits
+
+category: development
+
+subcategory:
+  - react
+  - frontend
+  - ui
+  - animations
+  - components
+
+type: link
+
+audience:
+  - college-students
+  - frontend-developers
+
+status: active
+
+featured: true
+
+notes: >
+  A large open-source collection of customizable React components,
+  animations, backgrounds, and creative UI tools.
