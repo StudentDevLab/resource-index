@@ -1,0 +1,27 @@
+id: summer-2027-internships
+
+name: Summer 2027 Internships
+
+upstream_url: https://github.com/SimplifyJobs/Summer2027-Internships
+
+category: internships
+
+subcategory:
+  - software-engineering
+  - artificial-intelligence
+  - data-science
+  - quant
+  - hardware
+
+type: link
+
+audience:
+  - college-students
+
+status: active
+
+featured: true
+
+notes: >
+  A highly popular community-maintained collection
+  of Summer 2027 technology internships.
