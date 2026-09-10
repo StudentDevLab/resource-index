@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StudentDevLab Resource",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "upstream_url",
+    "category",
+    "type",
+    "audience",
+    "status",
+    "featured",
+    "notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2
+    },
+    "upstream_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "internships",
+        "ai-ml",
+        "development",
+        "computer-science",
+        "open-source",
+        "career",
+        "hackathons",
+        "research"
+      ]
+    },
+    "subcategory": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "link",
+        "fork"
+      ]
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "slowing",
+        "stale",
+        "archived"
+      ]
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 300
+    }
+  },
+  "additionalProperties": false
+}
